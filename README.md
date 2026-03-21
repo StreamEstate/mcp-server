@@ -7,21 +7,15 @@ MCP server for the [Stream.estate](https://stream.estate) French real estate API
 - Node.js >= 20
 - [Stream.estate API key](https://stream.estate/signup)
 
-## Installation
+## Quick Start
+
+### Claude Code (one command)
 
 ```bash
-pnpm install
-pnpm run build
+claude mcp add stream-estate -- npx mcp-stream-estate -e STREAM_ESTATE_API_KEY=your-api-key
 ```
 
-## Configuration
-
-| Environment Variable | Required | Default | Description |
-|---------------------|----------|---------|-------------|
-| `STREAM_ESTATE_API_KEY` | Yes | — | Your Stream.estate API key |
-| `STREAM_ESTATE_BASE_URL` | No | `https://api.stream.estate` | API base URL |
-
-## Usage with Claude Desktop
+### Claude Desktop
 
 Add to your `claude_desktop_config.json`:
 
@@ -29,8 +23,8 @@ Add to your `claude_desktop_config.json`:
 {
   "mcpServers": {
     "stream-estate": {
-      "command": "node",
-      "args": ["/path/to/mcp.stream.estate/build/index.js"],
+      "command": "npx",
+      "args": ["mcp-stream-estate"],
       "env": {
         "STREAM_ESTATE_API_KEY": "your-api-key"
       }
@@ -39,23 +33,12 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-## Usage with Claude Code
+## Configuration
 
-Add to your `.mcp.json`:
-
-```json
-{
-  "mcpServers": {
-    "stream-estate": {
-      "command": "node",
-      "args": ["/path/to/mcp.stream.estate/build/index.js"],
-      "env": {
-        "STREAM_ESTATE_API_KEY": "your-api-key"
-      }
-    }
-  }
-}
-```
+| Environment Variable | Required | Default | Description |
+|---------------------|----------|---------|-------------|
+| `STREAM_ESTATE_API_KEY` | Yes | — | Your Stream.estate API key ([sign up](https://stream.estate/signup)) |
+| `STREAM_ESTATE_BASE_URL` | No | `https://api.stream.estate` | API base URL |
 
 ## Available Tools
 
