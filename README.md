@@ -12,7 +12,7 @@ MCP server for the [Stream.estate](https://stream.estate) French real estate API
 ### Claude Code (one command)
 
 ```bash
-claude mcp add stream-estate -- npx mcp-stream-estate -e STREAM_ESTATE_API_KEY=your-api-key
+claude mcp add -e STREAM_ESTATE_API_KEY=your-api-key stream-estate -- npx mcp-stream-estate
 ```
 
 ### Claude Desktop
