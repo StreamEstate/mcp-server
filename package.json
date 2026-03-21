@@ -1,0 +1,29 @@
+{
+  "name": "mcp-stream-estate",
+  "version": "1.0.0",
+  "description": "MCP server for the Stream.estate French real estate API",
+  "type": "module",
+  "bin": {
+    "mcp-stream-estate": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3"
+  }
+}
