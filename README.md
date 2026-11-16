@@ -1,7 +1,7 @@
 # Stream Estate MCP Server (v1, deprecated)
 
 > [!WARNING]
-> **This server is deprecated and will stop working on 31 December 2026**, together with the Stream Estate API v1.
+> **This server is deprecated and will stop working at the end of February 2027**, together with the Stream Estate API v1.
 > Switch to the **v2 remote MCP server**: `https://api-v2.stream.estate/mcp` (HTTP transport, `X-API-KEY` header), listed in the MCP Registry as [`estate.stream/mcp`](https://registry.modelcontextprotocol.io/v0/servers?search=estate.stream).
 > Setup guide: https://next.docs.stream.estate/en/docs/guides/mcp
 >
